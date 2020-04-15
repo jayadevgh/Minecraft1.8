@@ -37,11 +37,8 @@ public class Main {
     public static Block jadeOre;
     public static Item key;
     public static Item magmaIngot;
-    @SidedProxy(clientSide = "org.devoxx4kids.Main.ClientProxyJay", serverSide = "org. devoxx4kids.Main.CommonProxyJay")
-    public static CommonProxyJay proxy;
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    	proxy.registerRendering();
     	enderIngot = new enderIngot();
     	key = new ItemKey();
     	jadeOre = new BlockJadeOre();
